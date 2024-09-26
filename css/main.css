@@ -50,7 +50,8 @@ body {
 
 /* MAIN */
 
-.first_content {
+.first_content,
+.second_content {
   /* max-width: 320px; */
   display: flex;
   justify-content: center;
@@ -140,6 +141,7 @@ body {
   flex-grow: 0;
   margin: 20px 0px;
   background: rgb(30, 30, 30);
+  border-radius: 15px;
 }
 
 .second_img1 {
