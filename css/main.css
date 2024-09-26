@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   box-sizing: border-box;
 }
 body {
   font-size: 14px;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   background: rgb(43, 43, 44);
   margin: 0px;
 }
@@ -48,12 +50,20 @@ body {
 
 /* MAIN */
 
+.first_content {
+  /* max-width: 320px; */
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  width: 100vw;
+}
+
 .first_wrap {
-  /* margin: 36px 28px 62px 0px; */
+  margin: 36px 28px 62px 0px;
   position: relative;
   width: 293px;
   height: 290px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .first_img-ellipse {
@@ -66,6 +76,13 @@ body {
   top: 144px; */
   filter: blur(100px);
   background: rgb(255, 245, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  top: 30%;
+  left: 30%;
 }
 
 .first_img-horse {
@@ -85,8 +102,8 @@ body {
   justify-content: flex-end;
   /* principais corridas */
   position: absolute;
-  width: 180px;
-  height: 66px;
+  /* width: 180px;
+  height: 66px; */
   /* left: 90px;
   top: 283px; */
   color: rgb(255, 255, 255);
@@ -97,6 +114,8 @@ body {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+  bottom: 10%;
+  text-shadow: -2px 2px 2px black;
 }
 
 /* SECOND */
