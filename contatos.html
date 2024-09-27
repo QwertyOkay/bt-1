@@ -43,37 +43,38 @@
 		</div>
 	</header>
 
+    
+
 	<main>
-			<section class="about">
-				<div class="content-wrapper">
-				<div class="container">
-					<h1>Sobre nós</h1>
-					<p>
-						Bem-vindo à domain1.com! Somos uma plataforma dedicada a fornecer a você as informações mais
-						atualizadas e relevantes sobre corridas de cavalos no Portugal e no mundo.
-					</p>
-					<p>
-						Nossa missão é promover um ambiente de apostas responsável e seguro, onde os entusiastas das
-						corridas possam acessar dados precisos e análises detalhadas para ajudá-los a tomar decisões
-						informadas.
-					</p>
-					<p>
-						No domain1.com, valorizamos a transparência e a confiança, garantindo que nossos usuários tenham
-						à disposição todas as ferramentas necessárias para desfrutar de uma experiência completa e
-						divertida.
-					</p>
-					<p>
-						Oferecemos cobertura dos principais eventos, desde competições locais até corridas
-						internacionais, além de previsões e recomendações baseadas em insights de especialistas.
-					</p>
-					<p>
-						Se você é um fã das corridas ou está apenas começando, o domain1.com é o lugar certo para
-						explorar esse universo emocionante. Junte-se a nós e aproveite o melhor das corridas de cavalos!
-					</p>
-				</div>
-				</div>
-			</section>
-		</main>
+    <section class="about">
+        <div class="content-wrapper">
+            <div class="container">
+                <h1>Entre em Contato Conosco</h1>
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="thankYouModal">
+        <div class="modal-content">
+            <p>Obrigado pelo seu contato! Nós entraremos em contato consigo em breve.</p>
+            <button id="closeModal">Fechar</button>
+        </div>
+    </div>
+</main>
+
 
 		<footer class="footer">
 			<div class="container">
@@ -110,7 +111,7 @@
 		</div>
 		<div class="hidden"></div>
 
-
+        <script src="./js/contato.js"></script>
 		<script src="./js/main.js"></script>
 </body>
 
