@@ -1,0 +1,115 @@
+.cards {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 50px 0;
+}
+
+.cards__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cards__card {
+	background-color: #2b2b2c;
+	border-radius: 10px;
+	width: 560px;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cards__header {
+	margin-bottom: 20px;
+}
+
+.cards__logo {
+	width: 210px;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.cards h3 {
+	margin: 0;
+	font-size: 20px;
+	color: #efe845;
+	font-weight: bold;
+}
+
+.cards__bonus {
+	margin: 0;
+	color: #ffffff;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.cards__text {
+	color: #ffffff;
+	font-size: 14px;
+	margin: 0;
+	font-weight: 300;
+}
+
+.cards__hr {
+	background: #606061;
+}
+
+.cards__advantages {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.cards__advantages h4 {
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.cards__advantages ul {
+	list-style: none;
+	text-align: center;
+}
+
+.cards__advantages ul li {
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.cards__play-btn {
+	background-color: #efe845;
+	color: black;
+	border: none;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.cards__play-btn:hover {
+	background-color: #ffc107;
+}
+
+@media (max-width: 560px) {
+	.cards {
+		padding: 20px 10px 0 10px;
+	}
+
+	.cards__container {
+		flex-direction: column;
+		align-items: center;
+		height: 860px;
+	}
+
+	.cards__card {
+		width: 320px;
+	}
+}

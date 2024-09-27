@@ -1,186 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('header.css');
+@import url('promo.css');
+@import url('cards.css');
+@import url('posts.css');
+@import url('subpromo.css');
+@import url('footer.css');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-  font-size: 14px;
-  font-family: "Rubik", sans-serif;
-  background: rgb(43, 43, 44);
-  margin: 0px;
+	font-size: 14px;
+	font-family: 'Rubik', sans-serif;
+	background: #373737;
+	color: #ffffff;
+	margin: 0px;
 }
 
 .container {
-  /* padding: 0px 20px; */
-  width: 100%;
-  max-width: 360px;
-  /* margin: 0px auto; */
+	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
 }
 
-.header_content {
-  max-width: 320px;
-  display: flex;
-  justify-content: space-between;
-  gap: 72px;
-  margin: 0px auto;
-}
-
-.header_container {
-  width: 100vw;
-  height: 64px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: rgb(30, 30, 30);
-}
-
-.header_title {
-  color: rgb(239, 232, 69);
-  font-family: Rubik;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-/* MAIN */
-
-.first_content,
-.second_content {
-  /* max-width: 320px; */
-  display: flex;
-  justify-content: center;
-  margin: 0px auto;
-  width: 100vw;
-}
-
-.first_wrap {
-  margin: 36px 28px 62px 0px;
-  position: relative;
-  width: 293px;
-  height: 290px;
-  /* overflow: hidden; */
-}
-
-.first_img-ellipse {
-  position: absolute;
-  z-index: 1;
-  /* Ellipse 1 */
-  width: 220px;
-  height: 220px;
-  /* left: 70px;
-  top: 144px; */
-  filter: blur(100px);
-  background: rgb(255, 245, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  top: 30%;
-  left: 30%;
-}
-
-.first_img-horse {
-  position: absolute;
-  z-index: 2;
-  /* yellow horse */
-  width: 293px;
-  height: 290px;
-  /* left: 19px;
-  top: 100px; */
-}
-
-.first_title {
-  position: absolute;
-  z-index: 3;
-  display: flex;
-  justify-content: flex-end;
-  /* principais corridas */
-  position: absolute;
-  /* width: 180px;
-  height: 66px; */
-  /* left: 90px;
-  top: 283px; */
-  color: rgb(255, 255, 255);
-  font-family: Rubik;
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 33px;
-  letter-spacing: 0%;
-  text-align: center;
-  text-transform: uppercase;
-  bottom: 10%;
-  text-shadow: -2px 2px 2px black;
-}
-
-/* SECOND */
-
-.second_card {
-  /* card */
-  position: static;
-  width: 320px;
-  height: 381px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 20px 0px;
-  background: rgb(30, 30, 30);
-  border-radius: 15px;
-}
-
-.second_img1 {
-  /* image 68 */
-  position: static;
-  width: 210px;
-  height: 51px;
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 20px;
-}
-
-.second_title1 {
-  /* Jockey Club Brasileiro */
-  position: static;
-  width: 264px;
-  height: 24px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 10px 0px;
-
-  color: rgb(239, 232, 69);
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: uppercase;
+@media (max-width: 560px) {
+	.container {
+		max-width: 310px;
+	}
 }
