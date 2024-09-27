@@ -6,6 +6,7 @@
 @import url('posts.css');
 @import url('subpromo.css');
 @import url('footer.css');
+@import url('about.css');
 
 * {
 	box-sizing: border-box;
